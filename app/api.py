@@ -36,3 +36,10 @@ async def read_root() -> dict:
 @app.get("/todo", tags=["todos"])
 async def get_todos() -> dict:
     return { "data": todos }
+
+@app.post("/todo", tags=["todos"])
+async def add_todo(todo: dict) -> dict:
+    todos.append(todo)
+    return {
+        "data": { "Todo added." }
+    }
