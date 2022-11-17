@@ -1,0 +1,1 @@
+![workflow](https://github.com/mahonyodhran/todos-fastapi-backend/actions/workflows/python-app.yml/badge.svg)
